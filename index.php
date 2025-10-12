@@ -1,77 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>PHP</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap" rel="stylesheet">
-	<style>
-		html{
-			background-color:#DDE8F0;
-		}
-		body{
-			font-family: Cairo Play, sans-serif;
-			font-size: 20px;
-
-		}
-		h1{
-			text-align: center;
-		}
-
-		h3{
-			padding-left:30px;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Tasks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Cairo Play', sans-serif;
+            background-color: #1a1a1a;
+            color: #e5e7eb;
+        }
+        .mono {
+            font-family: 'Share Tech Mono', monospace;
+        }
+    </style>
 </head>
-<body>
-	<h1>Welcome to my first php website</h1>
+<body class="min-h-screen p-8">
+    <div class="max-w-4xl mx-auto">
+        <header class="mb-12 text-center">
+            <h1 class="text-4xl font-bold mb-2">PHP Tasks</h1>
+            <p class="text-gray-400">Select a task to execute</p>
+        </header>
 
-	<?php 
-		class fruit{
-			public $name;
-			public $color;
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <a href="introduction.php" class="bg-gray-800 hover:bg-gray-700 transition p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-2">1. Introduce Yourself</h2>
+                <p class="text-gray-400">Basic variable usage</p>
+            </a>
 
-			function set_name($name){
-				$this->name = $name;
-			}
-			function get_name(){
-				return $this->name;
-			}
-		}
-		
+            <a href="math.php" class="bg-gray-800 hover:bg-gray-700 transition p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-2">2. Simple Math</h2>
+                <p class="text-gray-400">Basic arithmetic operations</p>
+            </a>
 
+            <a href="area-peri.php" class="bg-gray-800 hover:bg-gray-700 transition p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-2">3. Rectangle Calculations</h2>
+                <p class="text-gray-400">Area and perimeter</p>
+            </a>
 
+            <a href="temperature.php" class="bg-gray-800 hover:bg-gray-700 transition p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-2">4. Temperature Converter</h2>
+                <p class="text-gray-400">Celsius to Fahrenheit</p>
+            </a>
 
-		$zname="Zairen Lapid";
-		$studentID="23-8510-248";
-		$course="Web Information System";
-		$section="3K- Group A";
-		$attendance=true;
-		$age=20;
-		$height=1.49;
-		$weight=39;
-		$bmi=round($weight/ pow($height, 2), 2);
-		$subject_load=array ("CIT5", "CIT6", "CIT17","CC17","SOCSCI103N", "CC6");
-		$degree=null;
-		$mango=new fruit();
-		$mango->set_name('Mango');
-		
+            <a href="swap.php" class="bg-gray-800 hover:bg-gray-700 transition p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-2">5. Swapping Variables</h2>
+                <p class="text-gray-400">Using temporary variable</p>
+            </a>
 
+            <a href="salary.php" class="bg-gray-800 hover:bg-gray-700 transition p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-2">6. Salary Calculator</h2>
+                <p class="text-gray-400">Net salary calculation</p>
+            </a>
 
-		echo "<h3> Student Name: $zname</h3>";
-		echo "<h3> Student Id Number: $studentID</h3>";
-		echo "<h3> Course: $subject_load[2] : $course</h3>";
-		echo "<h3> Section: $section</h3>";
-		echo "<h3> Attendance: $attendance</h3>";
-		echo "<h3> Age: $age</h3>";
-		echo "<h3> Degree: $degree</h3>";
-		echo  $mango->get_name();
+            <a href="bmi.php" class="bg-gray-800 hover:bg-gray-700 transition p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-2">7. BMI Calculator</h2>
+                <p class="text-gray-400">Body Mass Index</p>
+            </a>
 
+            <a href="string.php" class="bg-gray-800 hover:bg-gray-700 transition p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-2">8. String Manipulation</h2>
+                <p class="text-gray-400">Text processing</p>
+            </a>
 
-		echo "<h3> BMI: $bmi</h3>"
-	?>
+            <a href="bank.php" class="bg-gray-800 hover:bg-gray-700 transition p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-2">9. Bank Account</h2>
+                <p class="text-gray-400">Balance simulation</p>
+            </a>
 
+            <a href="grades.php" class="bg-gray-800 hover:bg-gray-700 transition p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-2">10. Grading System</h2>
+                <p class="text-gray-400">Score evaluation</p>
+            </a>
+
+            <a href="currency.php" class="bg-gray-800 hover:bg-gray-700 transition p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-2">11. Currency Converter</h2>
+                <p class="text-gray-400">PHP to other currencies</p>
+            </a>
+
+            <a href="travel.php" class="bg-gray-800 hover:bg-gray-700 transition p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-2">12. Travel Cost</h2>
+                <p class="text-gray-400">Fuel cost estimation</p>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
