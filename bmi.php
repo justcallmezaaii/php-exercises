@@ -18,8 +18,8 @@
 
         <div class="bg-gray-800 p-6 rounded-lg shadow-md">
             <?php
-                $weight = 70; // kg
-                $height = 1.75; // m
+                $weight = 39; // kg
+                $height = 1.4478; // m
                 $bmi = $weight / ($height * $height);
                 
                 echo "<div class='space-y-4'>";

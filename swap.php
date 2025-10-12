@@ -18,8 +18,8 @@
 
         <div class="bg-gray-800 p-6 rounded-lg shadow-md">
             <?php
-                $a = 10;
-                $b = 20;
+                $a = 02;
+                $b = 30;
                 
                 echo "<div class='space-y-4'>";
                 echo "<p class='text-lg'>Before swap: a = $a, b = $b</p>";

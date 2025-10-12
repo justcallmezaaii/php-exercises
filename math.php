@@ -18,8 +18,8 @@
 
         <div class="bg-gray-800 p-6 rounded-lg shadow-md">
             <?php
-                $a = 15;
-                $b = 3;
+                $a = 95874;
+                $b = 7869;
                 
                 echo "<div class='space-y-4'>";
                 echo "<p class='text-lg'>Numbers: $a and $b</p>";

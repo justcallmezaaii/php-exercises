@@ -37,9 +37,9 @@
                 }
                 
                 echo "<div class='space-y-4'>";
-                echo "<p class='text-lg'>Math: $math</p>";
-                echo "<p class='text-lg'>English: $english</p>";
-                echo "<p class='text-lg'>Science: $science</p>";
+                echo "<p class='text-lg'>Math: " . number_format($math, 0) . "</p>";
+                echo "<p class='text-lg'>English: " . number_format($english, 0) . "</p>";
+                echo "<p class='text-lg'>Science: " . number_format($science, 0) . "</p>";
                 echo "<p class='text-lg'>Average: " . number_format($average, 2) . "</p>";
                 echo "<p class='text-lg font-semibold text-blue-400'>Grade: $grade</p>";
                 echo "</div>";

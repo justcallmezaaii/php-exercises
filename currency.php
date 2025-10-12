@@ -18,7 +18,7 @@
 
         <div class="bg-gray-800 p-6 rounded-lg shadow-md">
             <?php
-                $php_amount = 1000;
+                $php_amount = 123456;
                 $usd_rate = 0.018;
                 $eur_rate = 0.017;
                 $jpy_rate = 2.42;

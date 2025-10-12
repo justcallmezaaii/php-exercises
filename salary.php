@@ -18,7 +18,7 @@
 
         <div class="bg-gray-800 p-6 rounded-lg shadow-md">
             <?php
-                $basic_salary = 50000;
+                $basic_salary = 120123;
                 $allowance = 15000;
                 $deduction = 7500;
                 $net_salary = $basic_salary + $allowance - $deduction;

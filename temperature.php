@@ -18,7 +18,7 @@
 
         <div class="bg-gray-800 p-6 rounded-lg shadow-md">
             <?php
-                $celsius = 25;
+                $celsius = 19;
                 $fahrenheit = ($celsius * 9/5) + 32;
                 
                 echo "<div class='space-y-4'>";
