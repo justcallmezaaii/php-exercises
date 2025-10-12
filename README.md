@@ -1,15 +1,14 @@
-# PHP Exercises
+# 🖥 PHP Exercises
 
 A collection of PHP-based exercises and calculators designed for learning and practicing web development concepts. This project includes various interactive tasks such as mathematical operations, BMI calculations, currency conversion, and more, presented in a clean, dark-themed web interface.
 
-## Features
+## 📎 Features
 
-- **Interactive Tasks**: 12 different PHP exercises covering basic programming concepts
 - **Responsive Design**: Built with Tailwind CSS for a modern, mobile-friendly interface
 - **Dark Theme**: Sleek dark UI with custom fonts (Cairo Play and Share Tech Mono)
 - **Easy Navigation**: Centralized index page linking to all exercises
 
-### Available Exercises
+### 📁 Available Exercises 
 
 1. **Introduce Yourself** - Basic variable usage and output
 2. **Simple Math** - Arithmetic operations
@@ -24,21 +23,21 @@ A collection of PHP-based exercises and calculators designed for learning and pr
 11. **Currency Converter** - PHP to other currencies conversion
 12. **Travel Cost** - Fuel cost estimation
 
-## Technologies Used
+## 💾 Technologies Used
 
 - **PHP**: Server-side scripting for logic and calculations
 - **HTML5**: Structure and markup
 - **Tailwind CSS**: Utility-first CSS framework for styling
 - **Google Fonts**: Cairo Play and Share Tech Mono for typography
 
-## Setup and Installation
+## 💽 Setup and Installation
 
 ### Prerequisites
 
 - **XAMPP** (or any local server with PHP support)
 - **Web Browser** (Chrome, Firefox, Safari, etc.)
 
-### Installation Steps
+### 🔢 Installation Steps
 
 1. **Clone or Download** the project files to your local machine.
 
@@ -53,13 +52,8 @@ A collection of PHP-based exercises and calculators designed for learning and pr
    - Open your web browser
    - Navigate to: `http://localhost/php-exercises/index.php`
 
-## Usage
 
-1. From the main index page, click on any task card to navigate to that exercise.
-2. Each exercise page contains PHP code that demonstrates the concept and provides interactive functionality.
-3. Use the "Back to tasks" link to return to the main menu.
-
-## Project Structure
+## 🗃 Project Structure
 
 ```
 php-exercises/
@@ -84,19 +78,17 @@ php-exercises/
 └── README.md              # This file
 ```
 
-## Author
+## 👤 Author
 
 <a href="https://github.com/justcallmezaaii/web-app/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=justcallmezaaii/web-app" alt="contrib.rocks image" />
 </a>
+
 **Zairen Lapid**
-- Student ID: 23-8510-248
 - Course: Web Information System
-- Section: 3K - Group A
-- Subject: CIT17
 
 <!-- CONTACT -->  
-## Contact  
+## 📞 Contact  
   
 Zairen V. Lapid - zvl0248@students.uc-bcf.edu.ph  
 
@@ -104,7 +96,7 @@ Project Link: [[https://github.com/justcallmezaaii/php-exercises](https://github
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## License
+## 🖋 License
 
 This project is created for educational purposes. Feel free to use and modify as needed.
 
