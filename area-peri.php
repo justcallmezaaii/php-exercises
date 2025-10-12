@@ -6,16 +6,8 @@
     <title>Rectangle Calculations</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Cairo Play', sans-serif;
-            background-color: #1a1a1a;
-            color: #e5e7eb;
-        }
-        .mono {
-            font-family: 'Share Tech Mono', monospace;
-        }
-    </style>
+	<link href="styles.css" rel="stylesheet"> 
+
 </head>
 <body class="min-h-screen p-8">
     <div class="max-w-4xl mx-auto">
