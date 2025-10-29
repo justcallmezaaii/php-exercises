@@ -80,8 +80,8 @@ php-exercises/
 
 ## 👤 Author
 
-<a href="https://github.com/justcallmezaaii/web-app/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=justcallmezaaii/web-app" alt="contrib.rocks image" />
+<a href="https://github.com/justcallmezaaii/php-exercises/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=justcallmezaaii/php-exercises" alt="contrib.rocks image" />
 </a>
 
 **Zairen Lapid**

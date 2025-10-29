@@ -27,7 +27,7 @@
             </a>
 
             <a href="area-peri.php" class="bg-gray-800 hover:bg-gray-700 transition p-6 rounded-lg shadow-md">
-                <h2 class="text-xl font-semibold mb-2">3. Rectangle Calculations</h2>
+                <h2 class="text-xl font-semibold mb-2">3. Shape Calculator</h2>
                 <p class="text-gray-400">Area and perimeter</p>
             </a>
 
