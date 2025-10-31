@@ -5,8 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bank Account</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-	<link href="styles.css" rel="stylesheet"> 
+	<link href="styles.css" rel="stylesheet">
+    <style>
+        model-viewer.floating-3d {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 50vw;
+            height: 50vh;
+            z-index: 10;
+            pointer-events: none;
+            mix-blend-mode: screen;
+            opacity: 0.5;      
+        }
+
+        @keyframes fadeIn {
+            from { 
+                opacity: 0; 
+                transform: translateY(20px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+
+        model-viewer.floating-3d {
+            animation: fadeIn 1.5s ease-in-out;    
+        }
+
+        @keyframes fadeIn {
+            from { 
+                opacity: 0; 
+                transform: translateY(20px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+
+        model-viewer.floating-3d {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+    </style> 
 </head>
 <body class="min-h-screen p-8 bg-gray-900 text-white">
     <div class="max-w-4xl mx-auto">
@@ -42,7 +86,7 @@
 
             <?php
                 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-                    // Safely get inputs and validate
+                    
                     $balance = isset($_POST['balance']) ? floatval($_POST['balance']) : 0;
                     $deposit = isset($_POST['deposit']) ? floatval($_POST['deposit']) : 0;
                     $withdraw = isset($_POST['withdraw']) ? floatval($_POST['withdraw']) : 0;
@@ -68,5 +112,14 @@
             ?>
         </div>
     </div>
+        <model-viewer class="floating-3d"
+        src="./assets/debit_card/scene.gltf"
+        alt="3D Object"
+        auto-rotate
+        rotation-per-second="40deg"
+        orientation="0deg 45deg 0deg"
+        shadow-intensity="1"
+        disable-zoom>
+    </model-viewer>
 </body>
 </html>

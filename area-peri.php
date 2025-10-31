@@ -5,30 +5,72 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Shape Calculator (safe)</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     <link href="styles.css" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        model-viewer.floating-3d {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 45vw;
+            height: 45vh;
+            z-index: 10;
+            pointer-events: none;
+            mix-blend-mode: screen;
+            opacity: 0.5;      
+        }
+
+        @keyframes fadeIn {
+            from { 
+                opacity: 0; 
+                transform: translateY(20px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+
+        model-viewer.floating-3d {
+            animation: fadeIn 1.5s ease-in-out;    
+        }
+
+        @keyframes fadeIn {
+            from { 
+                opacity: 0; 
+                transform: translateY(20px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+
+        model-viewer.floating-3d {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+    </style>
 </head>
 <body class="min-h-screen p-8 bg-gray-900 text-white">
     <div class="max-w-3xl mx-auto">
-        <header class="mb-8 text-center">
+        <header class="mb-8 text-left">
             <h1 class="text-3xl font-bold">Shape Calculator</h1>
             <a href="index.php" class="text-blue-400 hover:text-blue-300">← Back to tasks</a>
         </header>
 
         <div class="bg-gray-800 p-6 rounded-lg shadow-md">
             <?php
-            // Safely read the posted shape (or empty string if not set)
+
             $shape = $_POST['shape'] ?? '';
 
-            // Helper: read a numeric POST value or null
             function post_num($key) {
                 if (!isset($_POST[$key]) || $_POST[$key] === '') return null;
-                // filter and convert to float; returns null if not numeric
+
                 if (!is_numeric($_POST[$key])) return null;
                 return floatval($_POST[$key]);
             }
 
-            // preserve entered values
             $length = post_num('length');
             $width  = post_num('width');
             $side   = post_num('side');
@@ -36,8 +78,7 @@
             $base   = post_num('base');
             $height = post_num('height');
 
-            // If you want the inputs to appear immediately after selection without JS,
-            // allow form to POST when shape is chosen — keep that behavior.
+
             ?>
 
             <form method="post" class="space-y-6">
@@ -96,13 +137,11 @@
             </form>
 
             <?php
-            // Perform calculations only when form is submitted and "Calculate" clicked.
-            // We check for POST and that a specific shape is selected.
+
             if ($_SERVER['REQUEST_METHOD'] === 'POST' && $shape !== ''):
                 echo "<div class='mt-8 space-y-4'>";
                 echo "<h2 class='text-2xl font-semibold capitalize'>{$shape} results</h2>";
 
-                // Validate positive numbers & compute safely
                 switch ($shape) {
                     case 'rectangle':
                         if ($length === null || $width === null) {
@@ -176,5 +215,14 @@
             ?>
         </div>
     </div>
+    <model-viewer class="floating-3d"
+        src="./assets/impossible_shapes/scene.gltf"
+        alt="3D Object"
+        auto-rotate
+        rotation-per-second="40deg"
+        orientation="0deg 45deg 0deg"
+        shadow-intensity="1"
+        disable-zoom>
+    </model-viewer>
 </body>
 </html>
