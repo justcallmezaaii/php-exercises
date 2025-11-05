@@ -8,6 +8,8 @@
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     <link href="styles.css" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/logo1.ico">
+
     <style>
         model-viewer.floating-3d {
             position: fixed;
