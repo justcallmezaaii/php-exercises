@@ -8,6 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     <link href="styles.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/logo1.ico">
+
     <style>
         model-viewer.floating-3d {
             position: fixed;
